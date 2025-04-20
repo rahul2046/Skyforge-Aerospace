@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -69,31 +69,40 @@ header {
 }
 
 .logo {
-    width: 150px;
-    animation: rotate3D 10s linear infinite;
+    width: 250px; /* Adjusted for rectangular logo */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    animation: rotate3D 12s linear infinite;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05) rotateY(360deg);
 }
 
 @keyframes rotate3D {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
+    0% { transform: perspective(1000px) rotateY(0deg); }
+    100% { transform: perspective(1000px) rotateY(360deg); }
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: #4a90e2; /* Matches logo blue */
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
+    color: #d3d3d3; /* Light gray for contrast */
 }
 
 /* Call-to-Action Button */
 .cta-button {
     display: inline-block;
     padding: 0.8em 1.5em;
-    background: #4a90e2;
+    background: #4a90e2; /* Matches logo blue */
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
@@ -125,11 +134,13 @@ h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    color: #4a90e2; /* Matches logo blue */
 }
 
 p {
     font-size: 1.1em;
     line-height: 1.6;
+    color: #d3d3d3; /* Light gray for contrast */
 }
 
 a {
@@ -145,18 +156,19 @@ a:hover {
 footer {
     text-align: center;
     padding: 1em;
-    background: #1a3c6d;
+    background: #1a3c6d; /* Darker blue to complement logo */
     position: relative;
     width: 100%;
 }
 
 footer p {
     font-size: 0.9em;
+    color: #d3d3d3;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     h1 { font-size: 2em; }
     h2 { font-size: 1.5em; }
-    .logo { width: 100px; }
+    .logo { width: 180px; } /* Smaller logo on mobile */
 }
