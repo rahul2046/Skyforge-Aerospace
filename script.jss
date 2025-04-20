@@ -2,6 +2,7 @@
 gsap.from("header h1", { duration: 1, y: -100, opacity: 0, ease: "power2.out" });
 gsap.from("header p", { duration: 1, delay: 0.5, opacity: 0, ease: "power2.out" });
 gsap.from(".cta-button", { duration: 1, delay: 1, scale: 0, ease: "back.out(1.7)" });
+gsap.from(".logo", { duration: 1.5, delay: 0.2, rotationY: 360, opacity: 0, ease: "power2.out" });
 
 // Scroll Animations
 const sections = document.querySelectorAll(".section");
@@ -39,4 +40,5 @@ function createStar() {
     });
 }
 
-setInterval(createStar, 200);
+setInterval(createStar, 200); 
+      
