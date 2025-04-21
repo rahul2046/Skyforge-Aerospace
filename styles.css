@@ -69,8 +69,8 @@ header {
 }
 
 .logo {
-    width: 250px; /* Adjusted for rectangular logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 250px;
+    height: auto;
     object-fit: contain;
     animation: rotate3D 12s linear infinite;
     transition: transform 0.3s;
@@ -89,20 +89,20 @@ h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    color: #4a90e2; /* Matches logo blue */
+    color: #4a90e2;
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
-    color: #d3d3d3; /* Light gray for contrast */
+    color: #d3d3d3;
 }
 
 /* Call-to-Action Button */
 .cta-button {
     display: inline-block;
     padding: 0.8em 1.5em;
-    background: #4a90e2; /* Matches logo blue */
+    background: #4a90e2;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
@@ -134,13 +134,13 @@ h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    color: #4a90e2; /* Matches logo blue */
+    color: #4a90e2;
 }
 
 p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #d3d3d3; /* Light gray for contrast */
+    color: #d3d3d3;
 }
 
 a {
@@ -156,7 +156,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 1em;
-    background: #1a3c6d; /* Darker blue to complement logo */
+    background: #1a3c6d;
     position: relative;
     width: 100%;
 }
@@ -170,5 +170,5 @@ footer p {
 @media (max-width: 600px) {
     h1 { font-size: 2em; }
     h2 { font-size: 1.5em; }
-    .logo { width: 180px; } /* Smaller logo on mobile */
+    .logo { width: 180px; }
 }
