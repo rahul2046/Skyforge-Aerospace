@@ -1,4 +1,4 @@
-// GSAP Animations
+ // GSAP Animations
 gsap.from("header h1", { duration: 1, y: -100, opacity: 0, ease: "power2.out" });
 gsap.from("header p", { duration: 1, delay: 0.5, opacity: 0, ease: "power2.out" });
 gsap.from(".cta-button", { duration: 1, delay: 1, scale: 0, ease: "back.out(1.7)" });
@@ -40,5 +40,4 @@ function createStar() {
     });
 }
 
-setInterval(createStar, 200); 
-      
+setInterval(createStar, 200);
